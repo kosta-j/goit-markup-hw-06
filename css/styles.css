@@ -592,6 +592,7 @@ body {
 
 .footer-container {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -601,7 +602,7 @@ body {
 
 /* contacts block */
 .footer-wrapper-contacts {
-  margin-right: 65px;
+  /* margin-right: 65px; */
 }
 
 .page-adress {
@@ -650,7 +651,7 @@ body {
 
 /* social icons block */
 .footer-wrapper-social {
-  margin-right: 93px;
+  /* margin-right: 93px; */
 }
 
 .page-footer .social-link {
@@ -687,7 +688,7 @@ body {
   padding-left: 16px;
 
   background-color: transparent;
-  color: var(--main-bg-color);
+  color: rgba(255, 255, 255, 0.6);
 
   font-size: 16px;
   line-height: 1.25;
@@ -846,6 +847,7 @@ body {
 
   width: 528px;
   height: 581px;
+  padding: 40px;
 
   background-color: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -857,6 +859,73 @@ body {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-input-wrapper {
+  display: block;
+  position: relative;
+}
+
+.modal-form-input {
+  display: block;
+  height: 40px;
+  width: 100%;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  width: 18px;
+  height: 18px;
+
+  background-color: yellowgreen;
+
+  transform: translateY(-50%);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-message {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-message:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+
+.modal-form-input:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  background-color: teal;
+}
+
+.modal-form-message {
+  display: block;
+  height: 120px;
+  width: 100%;
+
+  resize: none;
+}
+
+.modal-form .button {
 }
 
 .modal-close-btn {
