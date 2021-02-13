@@ -407,34 +407,42 @@
             <p class="call-to-action">Оставьте свои данные, мы вам перезвоним</p>
             <form class="modal-form" action="#">
                 <label class="modal-form-input-label">
-                    Имя
+                    <span class="input-title">Имя</span>
                     <span class="modal-form-input-wrapper">
                         <input class="modal-form-input" type="text" name="user-name">
-                        <span class="modal-form-icon"></span>
+                        <svg class="modal-form-icon">
+                            <use href="./images/sprite.svg#input-icon-person"></use>
+                        </svg>
                     </span>
                 </label>
                 <label class="modal-form-input-label">
-                    Телефон
+                    <span class="input-title">Телефон</span>
                     <span class="modal-form-input-wrapper">
                         <input class="modal-form-input" type="tel" name="user-phone">
-                        <span class="modal-form-icon"></span>
+                        <svg class="modal-form-icon">
+                            <use href="./images/sprite.svg#input-icon-phone"></use>
+                        </svg>
                     </span>
                 </label>
                 <label class="modal-form-input-label">
-                    Почта
+                    <span class="input-title">Почта</span>
                     <span class="modal-form-input-wrapper">
                         <input class="modal-form-input" type="email" name="user-email">
-                        <span class="modal-form-icon"></span>
+                        <svg class="modal-form-icon">
+                            <use href="./images/sprite.svg#input-icon-email"></use>
+                        </svg>
                     </span>
                 </label>
-                <label class="modal-form-input-label">
-                    Комментарий
+                <label class="modal-form-textarea-label">
+                    <span class="textarea-title">Комментарий</span>
                     <textarea class="modal-form-message" name="user-message" placeholder="Введите текст">
                     </textarea>
                 </label>
-                <label class="modal-form-input-label">
-                    <input class="modal-form-check-policy" type="checkbox" name="user-policy">
-                    Соглашаюсь с рассылкой и принимаю Условия договора
+                <label class="modal-form-check-policy-label">
+                    <input class="modal-form-check-policy visually-hidden" type="checkbox" name="user-policy">
+                    <span class="modal-form-check-policy-title">
+                        Соглашаюсь с рассылкой и принимаю &nbsp<a class="modal-form-check-policy-link" href="#">Условия договора</a> 
+                    </span>
                 </label>
                 <button class="button" type="submit">Отправить</button>
             </form>
