@@ -926,17 +926,22 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-message:focus {
+.modal-form-message:focus,
+.modal-form-message:hover {
+  cursor: pointer;
   outline: none;
   border: 1px solid var(--accent-color);
 }
 
-.modal-form-input:focus {
+.modal-form-input:focus,
+.modal-form-input:hover {
+  cursor: pointer;
   outline: none;
   border: 1px solid var(--accent-color);
 }
 
-.modal-form-input:focus + .modal-form-icon {
+.modal-form-input:focus + .modal-form-icon,
+.modal-form-input:hover + .modal-form-icon {
   fill: var(--accent-color);
 }
 
